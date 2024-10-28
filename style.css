@@ -1,0 +1,209 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 560px);
+  padding-right: calc(50% - 560px);
+}
+
+/*_______Главная_страница_____*/
+.header {
+  background-image: url(./Image/HEADER_FON_ALL.jpeg);
+  background-size: cover;
+  height: 800px;
+}
+.header__textblock {
+  position: relative;
+}
+.header__title {
+  padding-top: 196px;
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+.header__text {
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+.header__button {
+  cursor: pointer;
+  position: static;
+  width: 247px;
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 16px 28px 16px 28px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 48px 0px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.header__button:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+}
+.header__runline {
+  position: absolute;
+  width: 3220px;
+  height: 90px;
+  left: -30px;
+  top: 710px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10;
+  padding: 27px 49px 27px 49px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+}
+.header__runlineLINK {
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/*______Об_играх_____*/
+.FON__star {
+  position: absolute;
+}
+.FON__star--1 {
+  left: 933px;
+  top: 77px;
+  transform: rotate(-6.77deg);
+}
+.FON__star--11 {
+  left: 27.97px;
+  top: 770px;
+  transform: rotate(5.45deg);
+}
+.FON__star--12 {
+  left: 45.18px;
+  top: 822px;
+  transform: rotate(5.45deg);
+}
+
+.aboutgame {
+  position: relative;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: rgb(32, 32, 39);
+}
+.aboutgame__title-text {
+  position: relative;
+}
+.aboutgame__title {
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+}
+.aboutgame__text {
+  margin-top: 24px;
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.aboutgame__conteiner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 72px;
+  gap: 32px;
+}
+.aboutgame__conteinerLMR {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+.aboutgame__cartgame {
+  transition: all 0.3s;
+  height: 473px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+}
+.aboutgame__cartgame--long {
+  height: 512px;
+}
+.aboutgame__cartgame:hover {
+  transform: scale(1.04);
+}
+.aboutgame__cartgame-img {
+  grid-column: span 4;
+  border-radius: 30px;
+}
+.aboutgame__namber {
+  margin-left: 48px;
+  margin-top: 40px;
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+}
+.aboutgame__name {
+  margin-left: 32px;
+  margin-top: 26px;
+  margin-bottom: 36px;
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */
