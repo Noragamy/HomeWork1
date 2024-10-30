@@ -188,6 +188,7 @@ body {
   border-radius: 30px;
 }
 .cart-game__namber {
+  margin-left: 32px;
   width: 108px;
   height: 36px;
   margin-top: 40px;
