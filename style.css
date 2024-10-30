@@ -168,7 +168,8 @@ body {
   flex-direction: column;
   gap: 39px;
 }
-.aboutgame__cart-game {
+
+.cart-game {
   transition: all 0.3s;
   height: 473px;
   display: flex;
@@ -176,20 +177,19 @@ body {
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
 }
-.aboutgame__cart-game_long {
+.cart-game__long {
   height: 512px;
 }
-.aboutgame__cart-game:hover {
+.cart-game:hover {
   transform: scale(1.04);
 }
-.aboutgame__cart-game-img {
+.cart-game__img {
   grid-column: span 4;
   border-radius: 30px;
 }
-.aboutgame__namber {
+.cart-game__namber {
   width: 108px;
   height: 36px;
-  margin-left: 48px;
   margin-top: 40px;
   color: rgb(32, 32, 39);
   font-family: inherit;
@@ -201,7 +201,7 @@ body {
   border-radius: 52.58px;
   background: rgb(247, 247, 247);
 }
-.aboutgame__name {
+.cart-game__name {
   margin-left: 32px;
   margin-top: 26px;
   margin-bottom: 36px;

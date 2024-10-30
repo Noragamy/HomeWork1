@@ -169,28 +169,27 @@ body {
         flex-direction: column;
         gap: 39px;
     }
-    &__cart-game {
+}
+.cart-game {
         transition: all 0.3s;
         height: 473px;
         display: flex;
         flex-direction: column;
         border-radius: 30px;
         background-color: rgb(255, 255, 255);
-        &_long {
+        &__long {
             height: 512px;
         }
         &:hover {
             transform: scale(1.04);
         }
-    }
-    &__cart-game-img {
+        &__img {
         grid-column: span 4;
         border-radius: 30px;
-    }
-    &__namber {
+        }
+        &__namber {
         width: 108px;
         height: 36px;
-        margin-left: 48px;
         margin-top: 40px;
         color: rgb(32, 32, 39);
         font-family: inherit;
@@ -201,8 +200,8 @@ body {
         padding-top: 10px;
         border-radius: 52.58px;
         background: rgb(247, 247, 247);
-    }
-    &__name {
+        }
+        &__name {
         margin-left: 32px;
         margin-top: 26px;
         margin-bottom: 36px;
@@ -216,3 +215,4 @@ body {
     }
 }
 
+@import 'm-style';    
