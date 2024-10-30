@@ -96,7 +96,7 @@ body {
         backdrop-filter: blur(50px);
         background: rgb(188, 236, 48);
     }
-    &__runlineLINK {
+    &__runline-link {
         color: rgb(32, 32, 39);
         font-family: inherit;
         font-size: 30px;
@@ -111,17 +111,17 @@ body {
 .fon {
     &__star {
         position: absolute;
-        &_a{
+        &_big{
             left: 933px;
             top: 77px;
             transform: rotate(-6.77deg);
         }
-        &_b{
+        &_medium{
             left: 27.97px;
             top: 770px;
             transform: rotate(5.45deg);
         }
-        &_c{
+        &_litle{
             left: 45.18px;
             top: 822px;
             transform: rotate(5.45deg);
