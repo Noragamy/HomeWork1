@@ -13,8 +13,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 560px);
-  padding-right: calc(50% - 560px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .fon__star {
@@ -192,14 +192,10 @@ body {
 
 .cart-game {
   transition: all 0.3s;
-  max-height: 473px;
   display: flex;
   flex-direction: column;
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
-}
-.cart-game__long {
-  max-height: 512px;
 }
 .cart-game:hover {
   transform: scale(1.04);
@@ -209,6 +205,7 @@ body {
   border-radius: 30px;
 }
 .cart-game__namber {
+  position: relative;
   margin-left: 32px;
   width: 108px;
   height: 36px;
@@ -224,9 +221,10 @@ body {
   background: rgb(247, 247, 247);
 }
 .cart-game__name {
-  margin-left: 32px;
-  margin-top: 26px;
-  margin-bottom: 36px;
+  position: relative;
+  padding-left: 32px;
+  padding-top: 26px;
+  padding-bottom: 36px;
   color: rgb(32, 32, 39);
   font-family: inherit;
   font-size: 32px;
@@ -264,7 +262,6 @@ body {
 .preview-game {
   margin-top: 32px;
   display: flex;
-  max-height: 500px;
   border-radius: 30px;
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
@@ -313,8 +310,8 @@ body {
   color: rgb(32, 32, 39);
 }
 .preview-game__img {
-  max-width: 600px;
-  max-height: 500px;
+  width: 600px;
+  height: 500px;
   border-radius: 30px;
 }
 
@@ -336,6 +333,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .fon {
+    display: none;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -359,6 +359,7 @@ body {
     justify-content: space-around;
   }
   .header__button {
+    margin-left: 29px;
     width: 285px;
     height: 55px;
     font-size: 16px;
@@ -401,18 +402,15 @@ body {
     grid-column: span 12;
   }
   .cart-game {
-    height: 420px;
-    max-width: 320px;
-  }
-  .cart-game__long {
-    height: 420px;
+    width: 320px;
   }
   .cart-game__namber {
     margin-top: 20px;
   }
   .cart-game__name {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-left: 32px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
   .cart-game__name--br {
     display: none;
@@ -466,11 +464,15 @@ body {
     height: 100px;
   }
   .footer__title {
+    color: rgb(0, 0, 0);
     font-size: 16px;
     line-height: 20px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 833px) {
+  .fon__star_big {
+    display: none;
+  }
   .center {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
@@ -504,5 +506,8 @@ body {
   }
   .preview-game__br {
     display: none;
+  }
+  .footer {
+    height: 120px;
   }
 }/*# sourceMappingURL=style.css.map */

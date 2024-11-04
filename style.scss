@@ -14,8 +14,8 @@ body {
 
 
 .center {
-    padding-left: calc(50% - 560px);
-    padding-right: calc(50% - 560px);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 .fon {
     &__star {
@@ -191,14 +191,10 @@ body {
 }
 .cart-game {
         transition: all 0.3s;
-        max-height: 473px;
         display: flex;
         flex-direction: column;
         border-radius: 30px;
         background-color: rgb(255, 255, 255);
-        &__long {
-            max-height: 512px;
-        }
         &:hover {
             transform: scale(1.04);
         }
@@ -207,6 +203,7 @@ body {
         border-radius: 30px;
         }
         &__namber {
+        position: relative;
         margin-left: 32px;
         width: 108px;
         height: 36px;
@@ -222,9 +219,10 @@ body {
         background: rgb(247, 247, 247);
         }
         &__name {
-        margin-left: 32px;
-        margin-top: 26px;
-        margin-bottom: 36px;
+        position: relative;
+        padding-left: 32px;
+        padding-top: 26px;
+        padding-bottom: 36px;
         color: rgb(32, 32, 39);
         font-family: inherit;
         font-size: 32px;
@@ -261,7 +259,6 @@ body {
 .preview-game {
     margin-top: 32px;
     display: flex;
-    max-height: 500px;
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: rgb(255, 255, 255);
@@ -306,11 +303,11 @@ body {
         &:hover {
         background: rgb(255, 255, 255);
         color: rgb(32, 32, 39);
-    }
+        }
     }
     &__img {
-        max-width: 600px;
-        max-height: 500px;
+        width: 600px;
+        height: 500px;
         border-radius: 30px;
     }
 }

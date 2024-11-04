@@ -1,5 +1,8 @@
 
 @media (max-width: 767px) {
+.fon {
+    display: none;
+}
 .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -22,6 +25,7 @@
         justify-content: space-around;
     }
     &__button {
+        margin-left: 29px;
         width: 285px;
         height: 55px;
         font-size: 16px;
@@ -68,17 +72,14 @@
     }
 }
 .cart-game {
-    height: 420px;
-    max-width: 320px;
-    &__long {
-        height: 420px;
-    }
+    width: 320px;
     &__namber {
         margin-top: 20px;
     }
     &__name {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        padding-left: 32px;
+        padding-top: 18px;
+        padding-bottom: 18px;
         &--br {
             display: none;
         }
@@ -133,6 +134,7 @@
 .footer {
     height: 100px;
     &__title {
+        color: rgb(0, 0, 0);
         font-size: 16px;
         line-height: 20px;
     }

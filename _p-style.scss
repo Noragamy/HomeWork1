@@ -1,4 +1,13 @@
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and 
+(min-width: 833px){
+    
+    .fon {
+        &__star {
+            &_big {
+                display: none;
+            }
+        }
+    }
     .center {
         padding-left: calc(50% - 393px);
         padding-right: calc(50% - 393px);
@@ -37,7 +46,8 @@
             display: none;
         }
     }
+    .footer {
+        height: 120px;
+    }
         }
 
-@media (min-width: 768px) and 
-(max-width: 833px) {}
