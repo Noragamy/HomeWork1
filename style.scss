@@ -24,6 +24,7 @@ body {
             left: 933px;
             top: 77px;
             transform: rotate(-6.77deg);
+            overflow: hidden;
         }
         &_medium{
             left: 27.97px;
@@ -36,27 +37,30 @@ body {
             transform: rotate(5.45deg);
         }
         &_topm{
-            left: 1326.54px;
-            top: 2396px;
+            left: 1156px;
+            top: 93px;
             transform: rotate(5.45deg);
         }
         &_topl{
-            left: 1281.33px;
-            top: 2363px;
+            left: 1199px;
+            top: 126px;
             transform: rotate(7.08deg);
         }
         &_butm{
-            left: 1319px;
-            top: 5636px;
+            left: 1198px;
+            bottom: 65px;
         }
         &_butl{
-            left: 1249px;
-            top: 5684px;
+            left: 1128px;
+            bottom: 45px;
         }  
     }
 }
 /*_______Главная_страница_____*/
 .header {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
     background-image: url(./Image/HEADER_FON_ALL.jpeg);
     background-size: cover;
     height: 800px;
@@ -115,11 +119,12 @@ body {
         }
     }
     &__runline {
+        overflow: hidden;
         position: absolute;
         width: 3220px;
         height: 90px;
         left: -30px;
-        top: 710px;
+        bottom: 0;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -189,13 +194,13 @@ body {
 }
 .cart-game {
         transition: all 0.3s;
-        height: 473px;
+        max-height: 473px;
         display: flex;
         flex-direction: column;
         border-radius: 30px;
         background-color: rgb(255, 255, 255);
         &__long {
-            height: 512px;
+            max-height: 512px;
         }
         &:hover {
             transform: scale(1.04);
@@ -259,7 +264,7 @@ body {
 .preview-game {
     margin-top: 32px;
     display: flex;
-    height: 500px;
+    max-height: 500px;
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: rgb(255, 255, 255);
@@ -307,8 +312,8 @@ body {
     }
     }
     &__img {
-        width: 600px;
-        height: 500px;
+        max-width: 600px;
+        max-height: 500px;
         border-radius: 30px;
     }
 }
@@ -329,4 +334,5 @@ body {
         text-align: center;
     }
 }
-@import 'm-style';    
+@import 'm-style';
+@import 'p-style';    
