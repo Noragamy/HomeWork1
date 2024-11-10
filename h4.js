@@ -36,16 +36,17 @@ for (let n = 1000; n >= 50; n = n / 2) {
 
 //Задание 6 
 
-for (let friday = 1; friday <= 7; friday++) {
-    if (friday === 5) {
-        const weekday = 'пятница';
+for (let fri = 1; fri <= 7; fri++) {
+    if (fri === 5) {
+        let friday = fri;
+        for (let day = 5; day <= 31; day += 7) {
+            if (day === friday || day - 7 === friday || day - 14 === friday || day - 21 === friday) {
+                console.log(`сегодня пятница ${day}е число, пора готовить еженедельный отчет`);
+            } 
+        }
     }
-}
 
-for (let day = 1; day <= 31; day++) {
-    if (day === 5 || day - 7 === 5 || day - 14 === 5 || day - 21 === 5) {
-        console.log(`сегодня пятница ${day}е число, пора готовить еженедельный отчет`);
-    }
+
 }
 
 
