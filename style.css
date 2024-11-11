@@ -336,6 +336,9 @@ body {
   .fon {
     display: none;
   }
+  .fon__star_big {
+    display: none;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -421,6 +424,7 @@ body {
   .minigame {
     padding-top: 0px;
     padding-bottom: 49px;
+    overflow: hidden;
   }
   .minigame__title {
     color: rgb(255, 255, 255);
