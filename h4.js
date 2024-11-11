@@ -33,23 +33,34 @@ for (let n = 1000; n >= 50; n = n / 2) {
     console.log(n);
 }
 
+//Задание 6
 
-//Задание 6 
-
-for (let fri = 1; fri <= 7; fri++) {
-    if (fri === 5) {
-        let friday = fri;
-        for (let day = 5; day <= 31; day += 7) {
-            if (day === friday || day - 7 === friday || day - 14 === friday || day - 21 === friday) {
-                console.log(`сегодня пятница ${day}е число, пора готовить еженедельный отчет`);
-            } 
-        }
+for (let day = 5; day <= 31; day += 7) {
+    if (day ===5 || day % 5) {
+        console.log(`сегодня пятница ${day}е число, пора готовить еженедельный отчет`);
     }
-
-
 }
 
 
+//Задание 6 +
+
+// for (let fri = 1; fri <= 7; fri++) {
+//     if (fri === 5) {
+//         let friday = fri;
+//         for (let day = 5; day <= 31; day += 7) {
+//             if (day === friday || day - 7 === friday || day - 14 === friday || day - 21 === friday) {
+//                 console.log(`сегодня пятница ${day}е число, пора готовить еженедельный отчет`);
+//             } 
+//         }       
+//     }
+//     else (fri === 4); {
+//         let thursday = fri;
+//         for (let day = 4; day <= 31; day += 7) {
+//             if (day === thursday || day - 7 === thursday || day - 14 === thursday || day - 21 === thursday) {
+//                 console.log(`сегодня четверг ${day}е число, завтра пора готовить еженедельный отчет`);}
+//         }
+//     }
+// }
 
 
 
