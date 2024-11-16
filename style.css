@@ -266,6 +266,10 @@ body {
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
   justify-content: space-between;
+  transition: all 0.3s;
+}
+.preview-game:hover {
+  transform: scale(1.02);
 }
 .preview-game__text {
   padding: 48px;
@@ -384,6 +388,7 @@ body {
     line-height: 110%;
   }
   .aboutgame {
+    display: none;
     padding-bottom: 48px;
   }
   .aboutgame__title {
@@ -433,7 +438,8 @@ body {
     font-weight: 700;
     line-height: 49px;
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    margin-top: 48px;
   }
   .preview-game {
     position: relative;

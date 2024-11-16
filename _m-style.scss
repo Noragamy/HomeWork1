@@ -54,6 +54,7 @@
         
     }
 .aboutgame {
+    display: none;
     padding-bottom: 48px;
     &__title {
         font-size: 40px;
@@ -103,7 +104,8 @@
         font-weight: 700;
         line-height: 49px;
         text-align: left;
-        margin-bottom: 16px;
+        margin-bottom: 14px;
+        margin-top: 48px;
     }
 }
 .preview-game{
