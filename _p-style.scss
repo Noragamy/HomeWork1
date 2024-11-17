@@ -1,6 +1,12 @@
 @media (max-width: 1024px) and 
-(min-width: 833px){
+(min-width: 768px){
     
+    .header {
+        &__title {
+            font-size: 30px;
+        }
+    }
+    }
     .fon {
         &__star {
             &_big {
@@ -9,8 +15,8 @@
         }
     }
     .center {
-        padding-left: calc(50% - 393px);
-        padding-right: calc(50% - 393px);
+        padding-left: calc(50% - 350px);
+        padding-right: calc(50% - 350px);
         }
     .cart-game {
         &__namber {
@@ -18,15 +24,19 @@
         }
         &__name {
             height: 90px;
-            margin-top: 20px;
             font-size: 24px;
             line-height: 30px;
+            padding-top: 2px;
+            padding-bottom: 2px;
         }
     }
     .minigame {
+        overflow: hidden;
         padding-bottom: 40px;
+        
     }
     .preview-game {
+        
         &__text {
             padding: 30px;
         }
@@ -44,6 +54,10 @@
         }
         &__br {
             display: none;
+        }
+        &__img {
+            max-width: 380px;
+            max-height: 380px;
         }
     }
     .footer {
