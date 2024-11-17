@@ -3,13 +3,8 @@
 function chooseLess(a, b) {
 
 if (a > b) {
-    let c = b;
-} else if (a < b) {
-    c = a;
-} else if (a === b) {
-    c = a;
+    return a < b ? a : b; 
 }
-return c;
 }
 
 //Задание 2 
