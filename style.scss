@@ -84,7 +84,6 @@ body {
         line-height: 32px;
         text-align: left;
         padding-top: 24px;
-        padding-bottom: 48px;
     }
     &__button {
         cursor: pointer; 
@@ -115,6 +114,7 @@ body {
             color: rgb(32, 32, 39);
         }
     }
+
     &__runline {
         overflow: hidden;
         position: absolute;
@@ -331,6 +331,16 @@ body {
         font-weight: 600;
         line-height: 29px;
         text-align: center;
+    }
+    &__anchor-body {
+        display: flex;
+        position: absolute;
+        width: 120px;
+        background-color: rgb(254, 255, 252);
+        opacity: .6;
+        z-index: 1;
+        top: 0;
+        right: 0;
     }
 }
 @import 'm-style';

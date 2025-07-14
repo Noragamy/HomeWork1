@@ -74,15 +74,83 @@ console.log(masEight.join(''));
 
 /*Задание 9 */
 console.log('Задание 9')
+const masNine = [[1, 2, 3], [4, 5, 6]];
+console.log(masNine.flat());
+
 /*Задание 10 */
 console.log('Задание 10')
+const masTen = [];
+for (let i = 1; i <= 10; i++) {
+  masTen.push(i);
+}
+
+let sum = 0;
+for (let i = 0; i < masTen.length - 1; i++) {
+  sum = masTen[i] + masTen[i + 1];
+  console.log(sum);
+}
+
 /*Задание 11 */
 console.log('Задание 11')
+function squaredMas(masEleven) {
+  const squaredNumbers = [];
+  for (let i = 0; i < masEleven.length; i++) {
+    squaredNumbers.push(Math.pow(masEleven[i], 2));
+  }
+  return squaredNumbers;
+}
 /*Задание 12 */
 console.log('Задание 12')
+
+function massfirt(mass) {
+  return mass.map(function callback(currentValue, index, array) {
+    return array[index].length
+  })
+}
+
+
+console.log(massfirt(['mama', 'papa papa']))
+
 /*Задание 13 */
 console.log('Задание 13')
+function filtarry(filt) {
+  return filt.filter(function callback(value, index, array) {
+    return array[index] < 0
+  })
+}
+
+console.log(filtarry([-3, 5, -2, 0]));
+
+
 /*Задание 14 */
 console.log('Задание 14')
+
+
+function evenNam(){
+  const massRandom = []
+
+  for (let i = 0; i < 10; i++) {
+    massRandom[i] = Math.floor(Math.random() * (10 - 1)) + 1;
+  }
+
+  return massRandom.filter((value, index, array) => value % 2 === 0)
+}
+
+console.log(evenNam())
+
 /*Задание 15 */
 console.log('Задание 15')
+
+function masslost(){
+  
+  const massRandom = []
+
+  for (let i = 0; i < 6; i++) {
+    massRandom[i] = Math.floor(Math.random() * (10 - 1)) + 1;
+  }
+  console.log(massRandom);
+
+return (massRandom.reduce((accumulator, currentValue) => accumulator + currentValue) / massRandom.length).toFixed(2)
+
+}
+console.log(masslost());

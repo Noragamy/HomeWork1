@@ -50,7 +50,7 @@ function simpleArithmetic() {
       } else {
         // Проверка деления на 0 
         if (b !== 0) {
-          return a / b;
+          return (a / b).toFixed(2);
         }
       }
     }
@@ -63,7 +63,7 @@ function simpleArithmetic() {
     // Проверяем ответ пользователя
     let userInput = Number(prompt(`Решите простой арифметический пример ${a} ${operation} ${b}`));
     console.log(userInput);
-    if (userInput.toFixed(2) === result.toFixed(2)) { //.toFixed(1) хочу чтобы пользователь мог считать с точностью до 2 знака
+    if (userInput === result) { //.toFixed(1) хочу чтобы пользователь мог считать с точностью до 2 знака
       alert(`${a} ${operation} ${b} = ${userInput}, абсолютно верно!`);
     } else {
       alert(`${a} ${operation} ${b} не равно ${userInput}, Ошибка!`);
@@ -96,3 +96,5 @@ function simpleArithmetic() {
 
 //     calculateAndCheck(a, b);
 // }
+
+
