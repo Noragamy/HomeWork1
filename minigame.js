@@ -29,7 +29,7 @@ function gouessNumber() {
     alert(`Бу-га-гашеньки, ты угадал, я правда загадал ${namUs}`);
 }
 
-/*______Простая арифметика___*/ 
+/*______Простая арифметика______*/ 
 
 function simpleArithmetic() {
     alert('Здравствуйте! Готовы порешать примеры?');
@@ -71,4 +71,59 @@ function simpleArithmetic() {
   }
 
 
+
+/*______Переверни текст______*/ 
+
+function reversedText() {
+  alert('Здравствуйте! Перевернуть ваш текст?');
+  const inputText = prompt('Введите текст:');
+  const reversedText = inputText.split('').reverse().join('');
+  console.log(reversedText);
+  alert(`Вот, что получилось "${reversedText}"`)
+}
+
+
+/*______Викторина_____*/ 
+
+const quiz = [
+{
+  question: "Какой компанией основан сервис онлайн-образования 'skypro' ?",
+  options: [" 1. MMM ", " 2. skypro ", " 3. skyeng ", " 4. mail.ru "],
+  correctAnswer: 3
+},
+{
+  question: "В каком году основан 'skypro'?",
+  options: [" 1. 2012 ", " 2. 2020 ", " 3. 2021 ", " 4. 2015 "],
+  correctAnswer: 3
+},
+{
+  question: "Какой компании или организации пренадлежат права на язык программирования JavaScript",
+  options: [" 1. Oracle ", " 2. Java ", " 3. Microsoft ", " 4. Никому не пренадлежит "],
+  correctAnswer: 4
+},
+{
+  question: "Что общего у `JavaScript` и `Java`",
+  options: [" 1. Часть названия ", " 2. Общее ядро ", " 3. Одинаковый синтаксис ", " 4. языки front-end разработки "],
+  correctAnswer: 1
+}
+];
+
+function startQuiz() {
+let correctCount = 0;
+
+for (let i = 0; i < quiz.length; i++) {
+  const question = quiz[i];
+  alert(`${question.question} \n ${question.options}`);
+
+ // question.options.forEach(option => alert(option));
+
+  const userAnswer = parseInt(prompt("Введите номер правильного ответа:"));
+
+  if (userAnswer === question.correctAnswer) {
+    correctCount++;
+  }
+}
+
+    alert("Вы правильно ответили на " + correctCount + " из " + quiz.length + " вопросов.");
+}
 
