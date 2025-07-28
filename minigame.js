@@ -70,31 +70,5 @@ function simpleArithmetic() {
     }
   }
 
-// /*______Простая арифметика(Код упрощен с помощью GTP)___*/ 
-//   function simpleArithmetic() {
-//     alert('Здравствуйте! Готовы порешать примеры?');
-//     let a = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-//     let b = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-
-//     const exp = ['+', '-', '*', '/'];
-//     let randomIndex = Math.floor(Math.random() * exp.length); // Генерируем случайное число от 0 до размера массива
-//     let operation = exp[randomIndex];
-//     console.log(`Случайный элемент массива: "${operation}"`);
-    
-//     // Создаём функцию для выполнения операции и проверки ответа пользователя
-//     function calculateAndCheck(a, b) {
-//         let result = a + '' + operation + '' + b; // как это вообще работает...
-//         console.log(`${a} ${operation} ${b} = ${result}`);
-//         let userInput = Number(prompt(`Решите простой арифметический пример ${result}`));// GTP не ставит нигде Number =)
-//         console.log(`Ответ пользователя: ${userInput}`);
-//         if (userInput === result) {
-//             alert(`${a} ${operation} ${b} = ${userInput}, абсолютно верно!`);
-//         } else {
-//             alert(`${a} ${operation} ${b} не равно ${userInput}, Ошибка!`);
-//         }
-//     }
-
-//     calculateAndCheck(a, b);
-// }
 
 
