@@ -115,8 +115,6 @@ for (let i = 0; i < quiz.length; i++) {
   const question = quiz[i];
   alert(`${question.question} \n ${question.options}`);
 
- // question.options.forEach(option => alert(option));
-
   const userAnswer = parseInt(prompt("Введите номер правильного ответа:"));
 
   if (userAnswer === question.correctAnswer) {
@@ -126,4 +124,65 @@ for (let i = 0; i < quiz.length; i++) {
 
     alert("Вы правильно ответили на " + correctCount + " из " + quiz.length + " вопросов.");
 }
+
+
+/*______Камень, ножницы, бумага_____*/ 
+
+const ssp = ["камень", "ножницы", "бумага"]
+
+function stoneScissorsPaper() {
+
+alert("Сыграем в камень, ножницы, бумага?");
+
+let userChois = prompt(`введите с клавиатуры "камень", "ножницы" или "бумагу"!`);
+
+console.log(userChois);
+
+while (!ssp.includes(userChois.toLowerCase())) {
+
+  alert(`Не могу прочесть`);
+
+  userChois = prompt(`введите с клавиатуры "камень", "ножницы" или "бумагу"!`);
+}
+
+let randomIndex = Math.floor((Math.random() * (2 - 0 + 1) + 0 ));
+console.log(randomIndex);
+
+let programChoise =  ssp[randomIndex];
+
+console.log(programChoise);
+
+
+
+let whoIsWinner = (userChois, programChoise) => {
+
+  if (userChois === programChoise) {
+
+      alert(`Цу-е-фа Вы ${userChois} а я ${programChoise} \n итого НИЧЬЯ`)
+
+  }
+
+  else if ((userChois === ssp[0] && programChoise === ssp[1]) || (userChois === ssp[1] && programChoise === ssp[2]) || (userChois === ssp[2] && programChoise === ssp[0])) {
+
+      alert(`Цу-е-фа Вы ${userChois} а я ${programChoise} \n Поздравляю, Вы победили!`)
+
+  }
+
+  else if ((programChoise === ssp[0] && userChois === ssp[1]) || (programChoise === ssp[1] && userChois === ssp[2]) || (programChoise === ssp[2] && userChois === ssp[0])) {
+
+      alert(`Цу-е-фа Вы ${userChois} а я ${programChoise} \n Я победил, не огорчайтесь!`)
+
+  }
+
+}
+
+whoIsWinner(userChois, programChoise)
+
+}
+
+
+/*______Случайный цвет_____*/ 
+
+
+
 
