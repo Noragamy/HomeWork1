@@ -134,7 +134,7 @@ function stoneScissorsPaper() {
 
 alert("Сыграем в камень, ножницы, бумага?");
 
-let userChois = prompt(`введите с клавиатуры "камень", "ножницы" или "бумагу"!`);
+let userChois = prompt(`введите с клавиатуры "камень", "ножницы" или "бумагу"!`).toLocaleLowerCase();
 
 console.log(userChois);
 
@@ -142,7 +142,7 @@ while (!ssp.includes(userChois.toLowerCase())) {
 
   alert(`Не могу прочесть`);
 
-  userChois = prompt(`введите с клавиатуры "камень", "ножницы" или "бумагу"!`);
+  userChois = prompt(`введите с клавиатуры "камень", "ножницы" или "бумагу"!`).toLocaleLowerCase();
 }
 
 let randomIndex = Math.floor((Math.random() * (2 - 0 + 1) + 0 ));

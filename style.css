@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -86,6 +90,7 @@ body {
   padding-top: 24px;
 }
 .header__button {
+  scroll-behavior: smooth;
   cursor: pointer;
   position: static;
   width: 247px;
