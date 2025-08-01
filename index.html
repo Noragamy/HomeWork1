@@ -67,7 +67,7 @@
         </div>
     </header>
     <!-- _____ОБ_ИГРАХ____ -->
-    <section class="aboutgame center" id="about">
+    <section class="aboutgame center colorFon" id="about">
         <img class="fon__star fon__star_big" src="./Image/Star 1.png" alt="#">
         <img class="fon__star fon__star_medium" src="./Image/Star 11.png" alt="#">
         <img class="fon__star fon__star_litle" src="./Image/Star 12.png" alt="#">
@@ -129,7 +129,7 @@
         </div>
     </section>
     <!-- _____МИНИ__ИГРЫ_____ -->
-    <section class="minigame center">
+    <section class="minigame center colorFon">
 
         <img class="fon__star fon__star_topm" src="./Image/Star 11.png" alt="#">
         <img class="fon__star fon__star_topl" src="./Image/Star 12.png" alt="#">
@@ -183,7 +183,7 @@
                 <div class="preview-game__text">
                     <h1 class="preview-game__title">Генератор случайных <br class="preview-game_br"> цветов</h1>
                     <p class="preview-game__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                    <button onclick="goClick()" class="preview-game__button">Играть!</button>
+                    <button class="preview-game__button" id="changeColorID">Играть!</button>
                 </div>
             </div>
         </div>
@@ -201,3 +201,7 @@
     <script src="minigame.js"></script>
 </body>
 </html>
+
+
+<!-- 2. animation: scroll-left 10s linear infinite - например, чтобы было бесконечным (scroll-left - название анимации -->
+<!-- 3. @keyframes scroll-left использовать саму анимацию и указать from и to (scroll-left - название анимации)  -->

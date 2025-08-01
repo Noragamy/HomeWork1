@@ -120,6 +120,17 @@ body {
         }
     }
 
+@keyframes scroll-left {
+ from {
+    transform: translateX(0)
+ }
+
+ to {
+    transform: translateX(-100%)    
+  }
+
+}
+
     &__runline {
         overflow: hidden;
         position: absolute;
@@ -138,7 +149,9 @@ body {
         border: 1px solid rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(50px);
         background: rgb(188, 236, 48);
+        animation: scroll-left 10s linear infinite;
     }
+
     &__runline-link {
         color: rgb(32, 32, 39);
         font-family: inherit;
@@ -148,6 +161,7 @@ body {
         letter-spacing: 4%;
         text-align: left;
         text-transform: uppercase;
+        
     }
 }
 /*______Об_играх_____*/

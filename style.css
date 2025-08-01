@@ -119,6 +119,14 @@ body {
   background: rgb(255, 255, 255);
   color: rgb(32, 32, 39);
 }
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 .header__runline {
   overflow: hidden;
   position: absolute;
@@ -138,6 +146,7 @@ body {
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
+  animation: scroll-left 10s linear infinite;
 }
 .header__runline-link {
   color: rgb(32, 32, 39);

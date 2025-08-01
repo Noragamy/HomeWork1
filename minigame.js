@@ -183,6 +183,22 @@ whoIsWinner(userChois, programChoise)
 
 /*______Случайный цвет_____*/ 
 
+const colorFon = document.querySelectorAll('.colorFon');
+const changeColorButton = document.querySelector('#changeColorID');
 
+function randomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 
+changeColorButton.addEventListener('click', function() {
+  console.log('изменить цвет');
+  colorFon.forEach(function(element) {
+    element.style.backgroundColor = randomColor();
+  });
+});
 
