@@ -122,15 +122,29 @@ body {
 
 @keyframes scroll-left {
  from {
-    transform: translateX(0)
+    transform: translateX(80%)
  }
 
  to {
-    transform: translateX(-100%)    
+    transform: translateX(-20%)    
   }
 
 }
+// @keyframes scroll-left-two {
+//  from {
+//     transform: translateX(100%)
+//  }
 
+//  to {
+//     transform: translateX(0)    
+//   }
+
+// }
+
+
+    &__runlineBox{
+    position: absolute;
+    }
     &__runline {
         overflow: hidden;
         position: absolute;
@@ -146,11 +160,36 @@ body {
         gap: 10;
         padding: 27px 49px 27px 49px;
         box-sizing: border-box;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        //border: 1px solid rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(50px);
         background: rgb(188, 236, 48);
-        animation: scroll-left 10s linear infinite;
+        animation: scroll-left 15s linear infinite;
     }
+    &__runlineCopy {
+        overflow: hidden;
+        position: absolute;
+        width: 3220px;
+        height: 90px;
+        left: -3220px;
+        bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10;
+        padding: 27px 49px 27px 49px;
+        box-sizing: border-box;
+       // border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);
+        background: rgb(188, 236, 48);
+        animation: scroll-left 15s linear infinite;
+        z-index: 2;
+    }
+
+
+
+
 
     &__runline-link {
         color: rgb(32, 32, 39);
