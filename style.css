@@ -84,7 +84,6 @@ body {
   line-height: 32px;
   text-align: left;
   padding-top: 24px;
-  padding-bottom: 48px;
 }
 .header__button {
   cursor: pointer;
@@ -266,6 +265,10 @@ body {
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
   justify-content: space-between;
+  transition: all 0.3s;
+}
+.preview-game:hover {
+  transform: scale(1.02);
 }
 .preview-game__text {
   padding: 48px;
@@ -292,6 +295,7 @@ body {
   margin-top: 24px;
 }
 .preview-game__button {
+  cursor: pointer;
   margin-top: 36px;
   padding: 16px 28px 16px 28px;
   border-radius: 60px;
@@ -331,9 +335,22 @@ body {
   line-height: 29px;
   text-align: center;
 }
+.footer__anchor-body {
+  display: flex;
+  position: absolute;
+  width: 120px;
+  background-color: rgb(254, 255, 252);
+  opacity: 0.6;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
 
 @media (max-width: 767px) {
   .fon {
+    display: none;
+  }
+  .fon__star_big {
     display: none;
   }
   .center {
@@ -381,6 +398,7 @@ body {
     line-height: 110%;
   }
   .aboutgame {
+    display: none;
     padding-bottom: 48px;
   }
   .aboutgame__title {
@@ -421,6 +439,7 @@ body {
   .minigame {
     padding-top: 0px;
     padding-bottom: 49px;
+    overflow: hidden;
   }
   .minigame__title {
     color: rgb(255, 255, 255);
@@ -429,7 +448,8 @@ body {
     font-weight: 700;
     line-height: 49px;
     text-align: left;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    margin-top: 48px;
   }
   .preview-game {
     position: relative;
@@ -469,24 +489,29 @@ body {
     line-height: 20px;
   }
 }
-@media (max-width: 1024px) and (min-width: 833px) {
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header__title {
+    font-size: 40px;
+  }
   .fon__star_big {
     display: none;
   }
   .center {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
+    padding-left: calc(50% - 350px);
+    padding-right: calc(50% - 350px);
   }
   .cart-game__namber {
     margin-top: 20px;
   }
   .cart-game__name {
     height: 90px;
-    margin-top: 20px;
     font-size: 24px;
     line-height: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
   .minigame {
+    overflow: hidden;
     padding-bottom: 40px;
   }
   .preview-game__text {
@@ -506,6 +531,10 @@ body {
   }
   .preview-game__br {
     display: none;
+  }
+  .preview-game__img {
+    max-width: 380px;
+    max-height: 380px;
   }
   .footer {
     height: 120px;

@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- МОЙ_САЙТ_МИНИИГР__ -->
-    <header class="header center ">
+    <header class="header center" id="anhor">
         <div class="header__textblock">
             <h1 class="header__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
             <p class="header__text">Тебе предстоит пройти несколько увлекательных игр. <br>Если готов, нажимай «Поехали!» и приступай.</p>
@@ -85,14 +85,14 @@
         </div>
         <div class="aboutgame__conteiner">
             <div class="aboutgame__conteiner-column">
-                <a class="aboutgame__link" href="#">
+                <a class="aboutgame__link" href="#gouess-number">
                 <div class="cart-game">
                     <img class="cart-game__img" src="./Image/N1.jpeg" alt="Угадай число">
                     <h3 class="cart-game__namber">Игра №1</h3>
                     <h2 class="cart-game__name">Угадай число</h2>
                 </div>                    
                 </a>
-                <a class="aboutgame__link" href="#">
+                <a class="aboutgame__link" href="#stone-scissors-papper">
                 <div class="cart-game cart-game__long">
                     <img class="cart-game__img" src="./Image/N4.jpeg" alt="Камень, ножницы, бумага">
                     <h3 class="cart-game__namber">Игра №4</h3>
@@ -101,14 +101,14 @@
                 </a>
             </div>
             <div class="aboutgame__conteiner-column">
-                <a class="aboutgame__link" href="#">
+                <a class="aboutgame__link" href="#simple-arithmetic">
                 <div class="cart-game cart-game__long">
                     <img class="cart-game__img" src="./Image/N2.jpeg" alt="Простая арифметика">
                     <h3 class="cart-game__namber">Игра №2</h3>
                     <h2 class="cart-game__name">Простая арифметика</h2>
                 </div>                    
                 </a>
-                <a class="aboutgame__link" href="#">
+                <a class="aboutgame__link" href="#simple-quze">
                 <div class="cart-game">
                     <img class="cart-game__img" src="./Image/N5.jpeg" alt="Простая викторина">
                     <h3 class="cart-game__namber">Игра №5</h3>
@@ -117,14 +117,14 @@
                 </a>
             </div>
             <div class="aboutgame__conteiner-column">
-                <a class="aboutgame__link" href="#">
+                <a class="aboutgame__link" href="#turn-text">
                 <div class="cart-game">
                     <img class="cart-game__img" src="./Image/N3.jpeg" alt="Переверни текс">
                     <h3 class="cart-game__namber">Игра №3</h3>
                     <h2 class="cart-game__name">Переверни текст</h2>
                 </div>                    
                 </a>
-                <a class="aboutgame__link" href="#">
+                <a class="aboutgame__link" href="#generator-color">
                 <div class="cart-game cart-game__long">
                     <img class="cart-game__img" src="./Image/N6.jpeg" alt="Генератор случайных цветов">
                     <h3 class="cart-game__namber">Игра №6</h3>
@@ -145,51 +145,51 @@
         <h1 class="minigame__title">Мини-игры</h1>
         <div class="minigame__conteiner">
             <div class="preview-game preview-game--left">
-                <div class="preview-game__text">
+                <div class="preview-game__text" id = "gouess-number">
                     <h1 class="preview-game__title">Угадай число</h1>
                     <p class="preview-game__description">Попробуй угадать случайное <br>число от 1 до 100.</p>
-                    <button class="preview-game__button">Играть!</button>
+                    <button onclick="gouessNumber()" class="preview-game__button">Играть!</button>
                 </div>
-                <img class="preview-game__img" src="./Image/N1.jpeg" alt="Угадай число">
+                <img class="preview-game__img" src="./Image/N11.jpeg" alt="Угадай число">
             </div>
-            <div class="preview-game preview-game--right">
-                <img class="preview-game__img" src="./Image/N2.jpeg" alt="Простая арифметика">
+            <div class="preview-game preview-game--right" id="simple-arithmetic">
+                <img class="preview-game__img" src="./Image/N22.jpeg" alt="Простая арифметика">
                 <div class="preview-game__text">
                     <h1 class="preview-game__title">Простая арифметика</h1>
                     <p class="preview-game__description">Попробуй решить простые арифметические задачи.</p>
-                    <button class="preview-game__button">Играть!</button>
+                    <button onclick="simpleArithmetic()" class="preview-game__button">Играть!</button>
                 </div>
             </div>
-            <div class="preview-game preview-game--left">
+            <div class="preview-game preview-game--left" id="turn-text">
                 <div class="preview-game__text">
                     <h1 class="preview-game__title">Переверни текст</h1>
                     <p class="preview-game__description">Попробуй ввести текст, который <br> будет перевернут.</p>
-                    <button class="preview-game__button">Играть!</button>
+                    <button onclick="goClick()" class="preview-game__button">Играть!</button>
                 </div>
-                <img class="preview-game__img" src="./Image/N3.jpeg" alt="Переверни текст">
+                <img class="preview-game__img" src="./Image/N33.jpeg" alt="Переверни текст">
             </div>
-            <div class="preview-game preview-game--right">
-                <img class="preview-game__img" src="./Image/N5.jpeg" alt="Викторина">
+            <div class="preview-game preview-game--right" id="simple-quze">
+                <img class="preview-game__img" src="./Image/N55.jpeg" alt="Викторина">
                 <div class="preview-game__text">
                     <h1 class="preview-game__title">Викторина</h1>
                     <p class="preview-game__description">Отвечай на вопросы викторины <br> с вариантами ответов.</p>
-                    <button class="preview-game__button">Играть!</button>
+                    <button onclick="goClick()" class="preview-game__button">Играть!</button>
                 </div>
             </div>
-            <div class="preview-game preview-game--left">
+            <div class="preview-game preview-game--left" id="stone-scissors-papper">
                 <div class="preview-game__text">
-                    <h1 class="preview-game__title">Камень, ножницы,<br class="preview-game_br"> бумага</h1>
+                    <h1 class="preview-game__title">Камень,<br class="preview-game_br"> ножницы,<br class="preview-game_br"> бумага</h1>
                     <p class="preview-game__description">Сыграй в популярную игру против компьютера.</p>
-                    <button class="preview-game__button">Играть!</button>
+                    <button onclick="goClick()" class="preview-game__button">Играть!</button>
                 </div>
-                <img class="preview-game__img" src="./Image/N4.jpeg" alt="Камень, ножницы, бумага">
+                <img class="preview-game__img" src="./Image/N44.jpeg" alt="Камень, ножницы, бумага">
             </div>
-            <div class="preview-game preview-game--right">
-                <img class="preview-game__img" src="./Image/N6.jpeg" alt="Генератор случайных цветов">
+            <div class="preview-game preview-game--right" id="generator-color">
+                <img class="preview-game__img" src="./Image/N66.jpeg" alt="Генератор случайных цветов">
                 <div class="preview-game__text">
                     <h1 class="preview-game__title">Генератор случайных <br class="preview-game_br"> цветов</h1>
                     <p class="preview-game__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                    <button class="preview-game__button">Играть!</button>
+                    <button onclick="goClick()" class="preview-game__button">Играть!</button>
                 </div>
             </div>
         </div>
@@ -198,5 +198,12 @@
     <footer class="footer center">
         <h1 class="footer__title">ВСЕ ПРАВА ЗАЩИЩЕНЫ</h1>
     </footer>
+    <a class="footer__anchor-link" href="#anhor">
+        <div class="footer__anchor-body">
+            
+        </div>
+    </a>
+    <!-- _____СКРИПТЫ__МИНИИГР____ -->
+    <script src="minigame.js"></script>
 </body>
 </html>
